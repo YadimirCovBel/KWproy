@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NotaNuevaComponent } from './notaNueva/notaNueva.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [	
+    AppComponent,
+      NotaNuevaComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule
