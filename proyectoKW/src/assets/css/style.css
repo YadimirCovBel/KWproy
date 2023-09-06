@@ -30,7 +30,7 @@ header{
 }
 header ul{
     display: block;
-    width: 75%;
+    width: 38%;
     height: inherit;
     margin: 0px auto;
 
@@ -50,5 +50,5 @@ header a{
     text-decoration: none;
     color: white;
     transition: all 300ms;
-    
+
 }
