@@ -12,6 +12,11 @@ body{
     background-attachment: fixed;
 }
 
+.clearfix{
+    float: none;
+    clear: both;
+}
+
 /*Barra de navegacion o header*/
 
 header{
@@ -20,5 +25,19 @@ header{
     height: 90px;
     background-color: rgb(2, 99, 219, 0.8);
     position: fixed;
+    text-transform: uppercase;
     
+}
+header ul{
+    display: block;
+    width: 75%;
+    height: inherit;
+    margin: 0px auto;
+
+}
+header ul li{
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 90px;
 }
