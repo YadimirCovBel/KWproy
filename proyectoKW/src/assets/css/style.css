@@ -56,4 +56,7 @@ header a{
 header a:hover, .actived{  
     background: rgba(0, 0, 0, 0.8);
 }
-
+/*logotipo  */
+header #logo a:hover{
+    background: transparent;
+}
