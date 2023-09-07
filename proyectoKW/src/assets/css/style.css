@@ -65,6 +65,16 @@ header a:hover, .actived{
 header #logo a:hover{
     background: transparent;
     color: black;
-    transform: scale(1.5,1.5);
+    transform: scale(1.5,1.5 );
 }
 
+
+/*Contenedor principal*/
+
+#content{
+    min-height: 700px;
+    width: 75%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 40px black;
+    background-color: rgba(255, 255, 255, 0.7);
+}
