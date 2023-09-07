@@ -60,7 +60,11 @@ header a:hover, .actived{
 /*logotipo  */
 #logo{font-family: 'Times New Roman', Times, serif;
        font-size: 30px; }
+
+#logo a{transition: color 500ms, transform 500ms;}
 header #logo a:hover{
     background: transparent;
+    color: black;
+    transform: scale(1.5,1.5);
 }
 
