@@ -103,6 +103,8 @@ footer{
     border-bottom: 2px solid #ccc;
 }
 #nota h3{
+    margin-top: 20px;
     font-size: 30px;
     border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
 }
