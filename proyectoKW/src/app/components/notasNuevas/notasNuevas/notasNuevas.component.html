@@ -7,8 +7,7 @@
 </head>
 <body>
   
-
-  <div id="nota">
+  <div id="notaDatosRecoleccion" class="nota">
     <h1>Nota Nueva</h1>
     <h3>Datos Recolecta</h3>
     <form class="formNotaNueva">
@@ -20,7 +19,8 @@
         <label>Numero de Nota</label>  
         <input type="number" name="NumeroNota">
           </p>
-
+        
+<div id="servicioHoteleria" class="nota">
           <h3>Servicio Hoteleria</h3>
 
       <p>
@@ -52,22 +52,75 @@
           <option value="cortinaBlackout">Cortina Blackout</option>
         </select>
       </p>
-            <h3>EXT Hospital</h3>
-
+    </div>
+    <div id="descartesHospital" class="nota">
+      <h3>Descartes Hospital</h3>
+           
+               <h4>Toalla De Baño</h4>
         <p>
-          <label for="serviciosHospital">Seleccionar Servicios Hoteleria</label>
-        <select id="hospital">
+          
+          <label for="descartesYReposicionesHospitalToallaDeBaño">Seleccionar Servicios EXT Hospital</label>
+        <select id="descartesToallaDeBaño">
+          <option value="">Seleccionar servicio</option>
+          <option value="toallaDeBañoDescartesClorhexidina">Toalla De Baño Descartes Clorhexidina</option>
+          <option value="toallaDeBañoDescartesArrastre">Toalla De Baño Descartes Arrastre </option>
+          <option value="toallaDeBañoDescartesTinta">Toalla De Baño Descartes Tinta </option>
+          <option value="toallaDeBañoDescartesVieja">Toalla De Baño Descartes Vieja </option>
+          <option value="toallaDeBañoDescartesCloro">Toalla De Baño Descartes Cloro </option>
+          <option value="toallaDeBañoDescartesPuntoAzul">Toalla De Baño Descartes Punto Azul </option>
+
+        </select>
+        </p>
+        <h4>Cobertor </h4>
+        <p>
+          
+          <label for="descartesYReposicionesHospitalCobertor">Seleccionar Servicios EXT Hospital</label>
+        <select id="descartesCobertor">
+          <option value="">Seleccionar servicio</option>
+          <option value="cobertorDescartesClorhexidina">Cobertor  Descartes Clorhexidina</option>
+          <option value="cobertorDescartesArrastre">Cobertor  Descartes Arrastre </option>
+          <option value="cobertorDescartesTinta">Cobertor Descartes Tinta </option>
+          <option value="cobertorDescartesVieja">Cobertor Descartes Vieja </option>
+          <option value="cobertorDescartesCloro">Cobertor Descartes Cloro </option>
+          <option value="cobertorDescartesPuntoAzul">Cobertor Descartes Punto Azul </option>
+
+        </select>
+        </p>
+        <h4>Toalla De Mano </h4>
+        <p>
+          
+          <label for="descartesYReposicionesHospitalToallaDeMano">Seleccionar Servicios EXT Hospital</label>
+        <select id="descartesToallaDeMano">
+          <option value="">Seleccionar servicio</option>
+          <option value="toallaDeManoDescartesClorhexidina">Toalla De Mano Descartes Clorhexidina</option>
+          <option value="toallaDeManoDescartesArrastre">Toalla De Mano Descartes Arrastre </option>
+          <option value="toallaDeManoDescartesTinta">Toalla De Mano Descartes Tinta </option>
+          <option value="toallaDeManoDescartesVieja">Toalla De Mano Descartes Vieja </option>
+          <option value="toallaDeManoDescartesCloro">Toalla De Mano Descartes Cloro </option>
+          <option value="toallaDeManoDescartesPuntoAzul">Toalla De Mano Descartes Punto Azul </option>
+
+        </select>
+        </p>
+      </div>
+
+      <div id="extHospital" class="nota">
+        
+    <h3>EXT Hospital</h3>
+        <p>
+          <label for="serviciosHospital">Seleccionar Servicios De Descartes</label>
+        <select id="reposiciones ">
           <option value="">Seleccionar servicio</option>
           <option value="bataAislamiento">Bata Aislamiento</option>
           <option value="bataPaciente">Bata Paciente</option>
           <option value="bataRegular">Bata Regular</option>
         </select>
         </p>
+      </div>
 
-
+      <div id="manteleria" class="nota">
     <h3>Manteleria</h3>
     <p>
-      <label for="serviciosManteleria">Seleccionar Servicios Hoteleria</label>
+      <label for="serviciosManteleria">Seleccionar Servicios Manteleria</label>
       <select id="manteleria">
         <option value="">Seleccionar servicio</option>
         <option value="moyeton">Moyeton</option>
@@ -95,10 +148,13 @@
 
       </select>
     </p>
+  </div>
+
+  <div id="RopaExpoGdlExt" class="nota">
 
     <h3>Ropa ExpoGDl EXT</h3>
     <p>
-      <label for="serviciosManteleriaExtra">Seleccionar Servicios Hoteleria</label>
+      <label for="serviciosManteleriaExtra">Seleccionar Servicios EXT ExpoGDl</label>
       <select id="manteleriaExtra">
         <option value="">Seleccionar servicio</option>
         <option value="filipina">Filipina</option>
@@ -108,12 +164,13 @@
 
       </select>
     </p>
+  </div>
            
-
+  <div id="servicioFrente" class="nota">
   <h3>Servicio Frente</h3>
       
     <p>
-      <label for="serviciosFrenteLavanderia">Seleccionar Servicios Hoteleria</label>
+      <label for="serviciosFrenteLavanderia">Seleccionar Servicios Frente</label>
       <select id="serviciosFrente">
         <option value="">Seleccionar servicio</option>
         <option value="encargoPorKilo">Encargo Por Kilo</option>
@@ -134,11 +191,10 @@
 
       </select>
     </p> 
+  </div>
    
       <input type="submit" value="Enviar" >
-  
-  
-  
+
     </form>
   </div>
 

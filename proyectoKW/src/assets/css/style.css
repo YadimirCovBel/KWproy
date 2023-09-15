@@ -1,5 +1,6 @@
 
 /*estilos generales*/
+display: flex;
 
 *{
     margin: 0px;
@@ -20,37 +21,36 @@ body{
 /*Barra de navegacion o header*/
 
 header{
-    display: block;
     width: 100%;
-    height: 90px;
+    height: 20%;
     background-color: rgb(2, 99, 219, 0.8);
     position: fixed;
     text-transform: uppercase;
+   
     
 }
 header ul{
-    display: block;
     width: 55%;
     height: inherit;
-    margin: 0px auto;
+    margin: auto;
     margin-top: 3px;
 
 }
 header ul li{
     display: inline-block;
-    margin: 0px auto;
+    margin: auto;
     text-align: center;
     line-height: 80px;
 }
 
 header a{
-    display: block;
     padding-right: 20px;
     padding-left: 20px;
     height: inherit;
     text-decoration: none;
     color: white;
     transition: all 300ms;
+    
 
 }
 
@@ -62,16 +62,63 @@ header a:hover, .actived{
        font-size: 30px; }
 
 #logo a{transition: color 500ms, transform 500ms;}
+
 header #logo a:hover{
     background: transparent;
     color: black;
     transform: scale(1.5,1.5 );
+}
+.contenedorHeaderPrincipal{
+    display: flex;
+    height: inherit;
+    width: inherit;
+}
+.flex-container{
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 100%;
+    width: 60%;
+    
+} 
+.flex-item{
+  padding: 5px;
+  width: 200px;
+  height: 80px;
+  margin-top: 10px;
+  line-height: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  align-content: center;
+  padding-top: 100px;
+
+}
+
+/*separador izquierda y derecha header*/
+
+.espacioIzquierda{
+    width: 20%;
+    height: inherit;
+    display: flex;
+}
+
+.espacioDerecha{
+    width: 20%;
+    height: inherit;
+    padding-right: 0%;
 }
 
 
 /*Contenedor principal*/
 
 #content{
+    display: flex;
     min-height: 500px;
     width: 75%;
     margin: 0px auto;
@@ -90,7 +137,7 @@ footer{
 }
 /*NotasNuevas*/
 
-#nota{
+.nota{
     width: 70%;
     margin: 0px auto;
     text-align: center;
@@ -98,13 +145,14 @@ footer{
     margin-bottom: 100px;
 }
 
-#nota h1{
+.nota h1{
     font-size: 60px;
     border-bottom: 2px solid #ccc;
 }
-#nota h3{
+.nota h3{
     margin-top: 20px;
     font-size: 30px;
     border-bottom: 2px solid #ccc;
     margin-bottom: 20px;
 }
+
