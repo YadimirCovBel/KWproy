@@ -59,7 +59,7 @@ header a:hover, .actived{
 }
 /*logotipo  */
 #logo{font-family: 'Times New Roman', Times, serif;
-       font-size: 30px; }
+       font-size: 100px; }
 
 #logo a{transition: color 500ms, transform 500ms;}
 

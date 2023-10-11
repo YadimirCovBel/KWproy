@@ -1,0 +1,19 @@
+{
+  "name": "api-kw-nodejs",
+  "version": "1.0.0",
+  "description": "Api rest de proyKW",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YadimirCovBel/KWproy.git"
+  },
+  "author": "Yadimir Covarrubias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YadimirCovBel/KWproy/issues"
+  },
+  "homepage": "https://github.com/YadimirCovBel/KWproy#readme"
+}
