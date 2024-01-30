@@ -10,6 +10,8 @@ var app = express();
 //middlewares
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json());
+// con app.use(bodyParser.json()); hacemos que toda peticion sera convertida en json
+
 
 //CORS
 
