@@ -1,7 +1,10 @@
 'use strict'
 var mongoose = require('mongoose');
 var app = require('./app');
+//se carga el archivo app.js 
 var port=3700; 
+//designamos puerto del servidor en este caso 3700
+
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/proyKingWash')

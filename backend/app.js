@@ -17,5 +17,13 @@ app.use(bodyParser.json());
 
 //rutas
 
+app.get('/test', (req,res)=> {
+    res.status(200).send({
+        message: "hola munedo desde mi aAPI de NodeJS"
+    });
+});
+//req son los datos que puedes estar enviando  desde el cliente o respuestas que haga 
+//res es una respuesta que sera enviada
+
 //exportar
 module.exports =app;
