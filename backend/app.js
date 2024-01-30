@@ -17,6 +17,12 @@ app.use(bodyParser.json());
 
 //rutas
 
+app.get('/', (req,res)=> {
+    res.status(200).send(
+        "<h1>Pagina de inicio <h1>"
+    );
+});
+
 app.get('/test', (req,res)=> {
     res.status(200).send({
         message: "hola munedo desde mi aAPI de NodeJS"
