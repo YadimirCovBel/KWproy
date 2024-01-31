@@ -25,8 +25,11 @@ app.get('/', (req,res)=> {
 
 app.post('/test/:id', (req,res)=> {
     console.log(req.body.Nombre);
+    //body toma datos de lo que se envio en el post
     console.log(req.query.web);
+    //toma datos dentro del url 
     console.log(req.params.id);
+    // toma un parametro definido  como el id dentro de /test/:id
 
     res.status(200).send({
         message: "hola munedo desde mi API de NodeJS"
