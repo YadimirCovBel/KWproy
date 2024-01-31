@@ -24,8 +24,9 @@ app.get('/', (req,res)=> {
 });
 
 app.post('/test', (req,res)=> {
+    console.log(req);
     res.status(200).send({
-        message: "hola munedo desde mi aAPI de NodeJS"
+        message: "hola munedo desde mi API de NodeJS"
     });
 });
 //req son los datos que puedes estar enviando  desde el cliente o respuestas que haga 
