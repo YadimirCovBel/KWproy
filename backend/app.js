@@ -23,7 +23,7 @@ app.get('/', (req,res)=> {
     );
 });
 
-app.get('/test', (req,res)=> {
+app.post('/test', (req,res)=> {
     res.status(200).send({
         message: "hola munedo desde mi aAPI de NodeJS"
     });
