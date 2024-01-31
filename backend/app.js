@@ -23,9 +23,10 @@ app.get('/', (req,res)=> {
     );
 });
 
-app.post('/test', (req,res)=> {
-    console.log(req.body.cliente);
+app.post('/test/:id', (req,res)=> {
+    console.log(req.body.Nombre);
     console.log(req.query.web);
+    console.log(req.params.id);
 
     res.status(200).send({
         message: "hola munedo desde mi API de NodeJS"
