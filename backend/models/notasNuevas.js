@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var notasNuevasSchema = Schema({
-    //hoteleria
+    //hoteleria Hospital
     Cliente: String,
     FechaRecolecta: Date,
     NumeroNota:Number,
@@ -103,3 +103,6 @@ var notasNuevasSchema = Schema({
     
 
 });
+
+module.exports= mongoose.model('notasNuevas',notasNuevasSchema);
+//  notasNuevas --> guarda los documentos en la coleccion 
